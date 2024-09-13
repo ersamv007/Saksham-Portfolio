@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./main.css">
+
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+	<script defer src="./main.js"></script>
+
+	<title>Document</title>
+</head>
+<body>
+
+<main>
+	<aside>
+		<ul class="links">
+			<li onclick="Navigate(0)" class="activeLink"><i class="fa-solid fa-house"></i>
+				<p>Home</p>
+			</li>
+			<li onclick="Navigate(1)"><i class="fa-solid fa-user"></i>
+				<p>About Me</p>
+			</li>
+			<li onclick="Navigate(2)"><i class="fa-solid fa-list"></i>
+				<p>Skills</p>
+			</li>
+			<li onclick="Navigate(3)"><i class="fa-solid fa-images"></i>
+				<p>Experience</p>
+			</li>
+			<li onclick="Navigate(4)"><i class="fa-solid fa-comments"></i>
+				<p>Contact Me</p>
+			</li>
+		</ul>
+	</aside>
+	<div class="swiper myswiper">
+		<div class="slidecontainer swiper-wrapper"> <!-- fixed swiper-wraper -->
+			<div class="swiper-slide home-slide">
+				<div class="Homecontent">
+					<h1>Hi! I'm <span class="stylized-name">Saksham Vashisht</span></h1>
+					<h2>A <span class="professions">Fashion Professional
+						<br>Textiles & Apparels
+						<br>Merchandising
+						<br>Sourcing
+						<br>Buying
+						<br>Sales
+						<br>QA</span>
+					</h2>
+					<p class="heroline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad officia iste tenetur dolor quis officiis quidem sapiente illo nostrum mollitia.</p> <!-- corrected "officilis" to "officiis" -->
+					<div class="buttongroup"><button>Hire Me</button><button>Contact Me</button></div>
+				</div>
+				<div class="SideImg">
+					<div class="top-right-corner">
+						<hr class="hr1">
+						<hr class="hr2">
+					</div>
+					<img src="http://picsum.photos/id/237/200/200" alt="">
+					<div class="bottom-left-corner">
+						<hr class="hr1">
+						<hr class="hr2">
+					</div>
+				</div>
+				<p class="slide-help">Scroll for next slide <i class="fa-solid fa-chevron-right fa-shake"></i></p>
+			</div>
+
+			<!-- About Me Slide -->
+			<div class="swiper-slide">
+				<div class="about-us">
+					<h1 class="heading">About Me</h1>
+					<h3 class="sub-heading">I'm Saksham Vashisht, <span class="professions">A Fashion Professional</span></h3> <!-- corrected "sun-heading" -->
+					<p class="aboutme-details">#WILL TYPE MY JOURNEY AS A FASHION PROFESSIONAL OVER HERE.</p>
+					<div class="about-me-table">
+						<li><span>Experience:</span> 4 years</li>
+						<li><span>Country:</span> India and Canada</li>
+						<li><span>Availability:</span> Open For Any Professional Opportunity</li>
+						<li><span>Past Organizations:</span>Asmara International (India) & Paraffin Stores (Canada)</li>
+						<li><span>Past Clients:</span> I have worked for Tom Tailor, Kohl's, Lands' End</li>
+						<li><span>Education:</span>Bachelor of Technology in Textile Chemistry & College Diploma in Fashion Management</li>
+						<li><span>Academic Institutions:</span> The Technological Institute of Textile & Sciences (India) and George Brown College (Canada)</li> <!-- fixed "insitutions" -->
+						<li><span>Age:</span> 27</li>
+						<li><span>Phone:</span> 647-975-3496</li>
+						<li><span>Email:</span> er.sakshamvashisht007@gmail.com</li>
+						<div class="buttonGroup"><button>Hire Me</button><button>Contact Me</button></div> <!-- fixed button typo -->
+					</div>
+
+					<!-- Skill Bars -->
+					<div class="skill-bar">
+						<li>
+							<p>Microsoft Excel & PowerPoint</p>
+							<div class="bar">
+								<div class="active-bar" style="width:99%"></div>
+							</div>
+						</li>
+						<li>
+							<p>Fabric & Apparel Production</p>
+							<div class="bar">
+								<div class="active-bar" style="width:80%"></div>
+							</div>
+						</li>
+						<li>
+							<p>Merchandising, Buying, Sales & Sourcing Solutions</p>
+							<div class="bar">
+								<div class="active-bar" style="width:85%"></div>
+							</div>
+						</li>
+						<li>
+							<p>Vendor Management & Customer Service</p>
+							<div class="bar">
+								<div class="active-bar" style="width:50%"></div>
+							</div>
+						</li>
+						<li>
+							<p>Tech Skills<br>Python<br>HTML & CSS Basics</p>
+							<div class="bar">
+								<div class="active-bar" style="width:70%"></div>
+							</div>
+						</li>
+					</div>
+				</div>
+			</div>
+
+			<!-- Services Slide -->
+			<div class="swiper-slide services">
+				<h1 class="heading">Services</h1>
+				<div class="service">
+					<div class="service-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+					<h2>Web Design</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quod.</p>
+				</div>
+				<div class="service">
+					<div class="service-icon"><i class="fa-solid fa-globe"></i></div> <!-- fixed "fa-globe" -->
+					<h2>Web Development</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quod.</p>
+				</div>
+				<div class="service">
+					<div class="service-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+					<h2>SEO</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quod.</p>
+				</div>
+				<div class="service">
+					<div class="service-icon"><i class="fa-solid fa-image"></i></div>
+					<h2>Graphic Designer</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quod.</p>
+				</div>
+				<div class="service">
+					<div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+					<h2>Software Developer</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quod.</p>
+				</div>
+				<div class="service">
+					<div class="service-icon"><i class="fa-solid fa-database"></i></div>
+					<h2>Database Admin</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quod.</p>
+				</div>
+			</div>
+
+			<!-- Gallery Slide -->
+			<div class="swiper-slide gallery">
+				<h1 class="heading">Gallery</h1>
+				<div class="project"><img src="https://picsum.photos/200/300?random=1" alt=""></div>
+				<div class="project"><img src="https://picsum.photos/200/300?random=2" alt=""></div>
+				<div class="project"><img src="https://picsum.photos/200/300?random=3" alt=""></div>
+				<div class="project"><img src="https://picsum.photos/200/300?random=4" alt=""></div>
+				<div class="project"><img src="https://picsum.photos/200/300?random=5" alt=""></div>
+				<div class="project"><img src="https://picsum.photos/200/300?random=6" alt=""></div>
+			</div>
+
+			<!-- Contact Me Slide -->
+			<div class="swiper-slide contactMe">
+				<h1 class="heading">Contact Me</h1>
+				<div class="Contactinfo"><i class="fa-solid fa-phone"></i>
+					<h3>Mobile No</h3>
+					<p>647-975-3496</p>
+				</div>
+				<div class="Contactinfo"><i class="fa-solid fa-location-dot"></i>
+					<h3>Location</h3>
+					<p>Toronto, ON, Canada</p>
+				</div>
+				<div class="Contactinfo"><i class="fa-regular fa-envelope"></i>
+					<h3>Email</h3>
+					<p>er.sakshamvashisht007@gmail.com</p>
+				</div>
+				<div class="Contactinfo"><i class="fa-solid fa-globe"></i>
+					<h3>Website</h3>
+					<p>abc123@gmail.com</p>
+				</div>
+
+				<!-- Contact Form -->
+				<form>
+					<h2>Send Me A Message <div class="SocialLinks">
+						<i class="fa-brands fa-instagram"></i>
+						<i class="fa-brands fa-linkedin"></i> <!-- fixed LinkedIn icon -->
+					</div></h2>
+					<input type="text" placeholder="Name">
+					<input type="text" placeholder="Email">
+					<textarea rows="10" placeholder="Type your message here..."></textarea>
+					<button class="primary">Send</button>
+				</form>
+				<footer>
+					<li>Copyright &copy; 2024 Vashisht Saksham</li>
+				</footer>
+			</div>
+		</div>
+	</div>
+</main>
+
+</body>
+</html>
